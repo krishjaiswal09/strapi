@@ -17,6 +17,8 @@ services:
         value: 0.0.0.0
       - key: PORT
         value: 10000
+      - key: PUBLIC_URL
+        value: https://art-gharana-strapi-0xfz.onrender.com
       - key: DATABASE_CLIENT
         value: postgres
       - key: DATABASE_HOST
