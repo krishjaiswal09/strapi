@@ -3,6 +3,7 @@ databases:
     databaseName: artgharana
     user: artgharana
     plan: free
+    engine: mysql
 
 services:
   - type: web
@@ -20,7 +21,7 @@ services:
       - key: PUBLIC_URL
         value: https://art-gharana-strapi-0xfz.onrender.com
       - key: DATABASE_CLIENT
-        value: postgres
+        value: mysql
       - key: DATABASE_HOST
         fromDatabase:
           name: artgharanadb
