@@ -21,6 +21,7 @@
     "mysql": "2.18.1",
     "mysql2": "^3.15.1",
     "pg": "^8.8.0",
+    "strapi-plugin-import-export-entries": "^1.21.1",
     "strapi-plugin-redirects": "^1.0.4"
   },
   "resolutions": {
