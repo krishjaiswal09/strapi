@@ -1,6 +1,6 @@
 databases:
   - name: artgharanadb
-    databaseName: art_gharana_db
+    databaseName: artgharana
     user: artgharana
     plan: free
 
@@ -18,7 +18,7 @@ services:
       - key: PORT
         value: 10000
       - key: DATABASE_CLIENT
-        value: mysql
+        value: postgres
       - key: DATABASE_HOST
         fromDatabase:
           name: artgharanadb
