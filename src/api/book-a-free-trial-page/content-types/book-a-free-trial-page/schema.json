@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "book_a_free_trial_pages",
+  "info": {
+    "singularName": "book-a-free-trial-page",
+    "pluralName": "book-a-free-trial-pages",
+    "displayName": "Book A Free Trial Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "testimonials": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::testimonial.testimonial"
+    },
+    "faqs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "faq-questions.faq-questions",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

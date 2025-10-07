@@ -1,0 +1,98 @@
+{
+  "kind": "singleType",
+  "collectionName": "home_pages",
+  "info": {
+    "singularName": "home-page",
+    "pluralName": "home-pages",
+    "displayName": "Home Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "how_it_work": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.how-it-work",
+      "required": true
+    },
+    "you_have_been_waiting_for": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.you-have-been-waiting-for",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    },
+    "legend_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.banner",
+      "required": true
+    },
+    "join_gharana_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.banner",
+      "required": true
+    },
+    "gurus_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.banner",
+      "required": true
+    },
+    "becom_a_teacher_section": {
+      "type": "component",
+      "repeatable": false,
+      "component": "home-page.banner",
+      "required": true
+    },
+    "you_have_been_waiting_for_image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "file": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "video_thumbnail": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slider": {
+      "displayName": "slider",
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.slider",
+      "required": true
+    }
+  }
+}

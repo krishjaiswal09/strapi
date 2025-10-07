@@ -1,0 +1,47 @@
+{
+  "collectionName": "components_offer_features_pricings",
+  "info": {
+    "displayName": "Plan Card",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    },
+    "payment_link": {
+      "type": "text",
+      "required": true,
+      "maxLength": 600
+    },
+    "price": {
+      "type": "component",
+      "repeatable": false,
+      "component": "offer-features.offer-features",
+      "required": true
+    },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "offer-features.feature",
+      "required": true,
+      "max": 2
+    },
+    "best_seller": {
+      "type": "boolean",
+      "default": false,
+      "required": false
+    },
+    "country": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    }
+  }
+}

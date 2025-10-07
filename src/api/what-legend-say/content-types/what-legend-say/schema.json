@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "what_legend_says",
+  "info": {
+    "singularName": "what-legend-say",
+    "pluralName": "what-legend-says",
+    "displayName": "What Legend Say",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "skill": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "home": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

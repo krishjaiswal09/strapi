@@ -1,0 +1,74 @@
+databases:
+  - name: artgharanadb
+    databaseName: art_gharana_db
+    user: artgharana
+    plan: free
+
+services:
+  - type: web
+    name: art-gharana-strapi
+    env: node
+    buildCommand: npm install && npm run build
+    startCommand: npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: 10000
+      - key: DATABASE_CLIENT
+        value: mysql
+      - key: DATABASE_HOST
+        fromDatabase:
+          name: artgharanadb
+          property: host
+      - key: DATABASE_PORT
+        fromDatabase:
+          name: artgharanadb
+          property: port
+      - key: DATABASE_NAME
+        fromDatabase:
+          name: artgharanadb
+          property: database
+      - key: DATABASE_USERNAME
+        fromDatabase:
+          name: artgharanadb
+          property: user
+      - key: DATABASE_PASSWORD
+        fromDatabase:
+          name: artgharanadb
+          property: password
+      - key: DATABASE_SSL
+        value: false
+      - key: APP_KEYS
+        generateValue: true
+      - key: API_TOKEN_SALT
+        generateValue: true
+      - key: ADMIN_JWT_SECRET
+        generateValue: true
+      - key: JWT_SECRET
+        generateValue: true
+      - key: TRANSFER_TOKEN_SALT
+        generateValue: true
+      - key: SMTP_HOST
+        value: smtp-relay.brevo.com
+      - key: SMTP_PORT
+        value: 587
+      - key: SMTP_USERNAME
+        value: support@artgharana.com
+      - key: SMTP_PASSWORD
+        sync: false
+      - key: CONTACT_US_EMAIL
+        value: support@artgharana.com
+      - key: CAREER_EMAIL
+        value: careers@artgharana.com
+      - key: TEACHER_EMAIL
+        value: careers@artgharana.com
+      - key: LEADSQUARED_ACCESS_KEY
+        sync: false
+      - key: LEADSQUARED_SECRET_KEY
+        sync: false
+      - key: LEADSQUARED_HOST
+        value: https://api-in21.leadsquared.com/v2/
+    plan: free

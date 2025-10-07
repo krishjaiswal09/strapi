@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "blog_seos",
+  "info": {
+    "singularName": "blog-seo",
+    "pluralName": "blog-seos",
+    "displayName": "Blog SEO",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "gallaries",
+  "info": {
+    "singularName": "gallary",
+    "pluralName": "gallaries",
+    "displayName": "Gallary",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "short_description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "home": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

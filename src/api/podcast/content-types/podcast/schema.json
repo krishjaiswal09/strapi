@@ -1,0 +1,83 @@
+{
+  "kind": "collectionType",
+  "collectionName": "podcasts",
+  "info": {
+    "singularName": "podcast",
+    "pluralName": "podcasts",
+    "displayName": "Podcast",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "youtube": {
+      "type": "string",
+      "required": true
+    },
+    "spotify": {
+      "type": "string"
+    },
+    "apple_music": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "richtext",
+      "required": true
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": true,
+      "component": "highlights.highlights",
+      "required": true
+    },
+    "Guests": {
+      "type": "component",
+      "repeatable": true,
+      "component": "guests.guests",
+      "required": true,
+      "max": 3
+    },
+    "categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::category.category"
+    },
+    "duration": {
+      "type": "integer",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    },
+    "popularity": {
+      "type": "integer",
+      "required": false
+    }
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "kind": "singleType",
+  "collectionName": "frequently_asked_questions_pages",
+  "info": {
+    "singularName": "frequently-asked-questions-page",
+    "pluralName": "frequently-asked-questions-pages",
+    "displayName": "Frequently Asked Questions Page",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "faq_categories": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::faq-category.faq-category"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_us_about_uses",
+  "info": {
+    "displayName": "About Us"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 900
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "plan_pricing_seos",
+  "info": {
+    "singularName": "plan-pricing-seo",
+    "pluralName": "plan-pricing-seos",
+    "displayName": "Plan Pricing SEO"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

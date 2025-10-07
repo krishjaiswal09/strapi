@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "stars",
+  "info": {
+    "singularName": "star",
+    "pluralName": "stars",
+    "displayName": "Star",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 20
+    },
+    "age": {
+      "type": "integer",
+      "required": true
+    },
+    "video": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "videos"
+      ]
+    },
+    "home": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "role": {
+      "type": "string",
+      "maxLength": 20,
+      "required": true
+    }
+  }
+}

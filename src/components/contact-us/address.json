@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_contact_us_addresses",
+  "info": {
+    "displayName": "Address",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "country": {
+      "type": "string",
+      "required": true,
+      "maxLength": 15
+    },
+    "address": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "phone": {
+      "type": "string",
+      "required": true,
+      "maxLength": 19
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    }
+  }
+}

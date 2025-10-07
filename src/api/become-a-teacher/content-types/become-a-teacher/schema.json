@@ -1,0 +1,52 @@
+{
+  "kind": "collectionType",
+  "collectionName": "become_a_teachers",
+  "info": {
+    "singularName": "become-a-teacher",
+    "pluralName": "become-a-teachers",
+    "displayName": "Become A Teacher",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 100
+    },
+    "phone": {
+      "type": "biginteger"
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "skill": {
+      "type": "string",
+      "required": true
+    },
+    "sub_skill": {
+      "type": "string"
+    },
+    "last_name": {
+      "type": "string",
+      "required": true,
+      "maxLength": 50
+    },
+    "message": {
+      "type": "text",
+      "maxLength": 500,
+      "required": false
+    },
+    "file": {
+      "allowedTypes": [
+        "files"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

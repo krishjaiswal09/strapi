@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_home_page_you_have_been_waiting_fors",
+  "info": {
+    "displayName": "You Have Been Waiting For",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 85
+    }
+  }
+}

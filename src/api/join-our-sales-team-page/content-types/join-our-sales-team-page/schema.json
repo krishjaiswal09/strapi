@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "join_our_sales_team_pages",
+  "info": {
+    "singularName": "join-our-sales-team-page",
+    "pluralName": "join-our-sales-team-pages",
+    "displayName": "Join Our Sales Team Page"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

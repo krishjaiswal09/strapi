@@ -1,0 +1,25 @@
+stages:
+  - deploy
+
+before_script:
+  - cd /var/www/html/backend/art-gharana && git checkout main && git pull origin main
+  - sh -c 'pkill -9 node || true' ; echo $?
+  - sh -c 'pkill -9 next || true' ; echo $?
+
+deploy:
+  stage: deploy
+
+  environment:
+    name: production
+    url: http://159.223.236.30
+
+  only:
+    - main
+
+  tags:
+    - deploy
+
+  script:
+    - echo "Job is done :)"
+    - cd /var/www/html/backend/art-gharana && yarn run run
+    - cd /var/www/html/frontend/craftnotion && yarn run stop && yarn run start-websites

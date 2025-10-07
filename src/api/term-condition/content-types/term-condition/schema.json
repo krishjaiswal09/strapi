@@ -1,0 +1,33 @@
+{
+  "kind": "singleType",
+  "collectionName": "term_conditions",
+  "info": {
+    "singularName": "term-condition",
+    "pluralName": "term-conditions",
+    "displayName": "Term Condition",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "description": {
+      "type": "text",
+      "maxLength": 27500,
+      "required": true
+    },
+    "sections": {
+      "type": "component",
+      "repeatable": true,
+      "component": "privacy-policy.privacy-policy",
+      "required": true
+    },
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "gallery_seos",
+  "info": {
+    "singularName": "gallery-seo",
+    "pluralName": "gallery-seos",
+    "displayName": "Gallery SEO"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_home_page_how_it_works",
+  "info": {
+    "displayName": "How It Work",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 25
+    },
+    "description": {
+      "type": "string",
+      "required": true,
+      "maxLength": 120
+    },
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false,
+      "required": true
+    }
+  }
+}

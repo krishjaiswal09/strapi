@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_privacy_policy_privacy_policies",
+  "info": {
+    "displayName": "Privacy Policy"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "maxLength": 3000
+    }
+  }
+}

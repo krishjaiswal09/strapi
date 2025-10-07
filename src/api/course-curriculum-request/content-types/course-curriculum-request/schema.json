@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "course_curriculum_requests",
+  "info": {
+    "singularName": "course-curriculum-request",
+    "pluralName": "course-curriculum-requests",
+    "displayName": "Course Curriculum Request",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "artforms": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

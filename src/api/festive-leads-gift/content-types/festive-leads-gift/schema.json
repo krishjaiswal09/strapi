@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "festive_leads_gifts",
+  "info": {
+    "singularName": "festive-leads-gift",
+    "pluralName": "festive-leads-gifts",
+    "displayName": "Festive leads Gift",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SenderName": {
+      "type": "string"
+    },
+    "SenderEmail": {
+      "type": "email"
+    },
+    "SenderPhone": {
+      "type": "string"
+    },
+    "SenderCountry": {
+      "type": "string"
+    },
+    "ReceiverName": {
+      "type": "string"
+    },
+    "ReceiverEmail": {
+      "type": "email"
+    },
+    "ReceiverPhone": {
+      "type": "string"
+    },
+    "ReceiverCountry": {
+      "type": "string"
+    },
+    "PackageName": {
+      "type": "string"
+    }
+  }
+}

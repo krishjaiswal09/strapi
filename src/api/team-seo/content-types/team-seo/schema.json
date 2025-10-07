@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "team_seos",
+  "info": {
+    "singularName": "team-seo",
+    "pluralName": "team-seos",
+    "displayName": "Team SEO"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "SEO": {
+      "type": "component",
+      "repeatable": false,
+      "component": "seo.seo",
+      "required": true
+    }
+  }
+}

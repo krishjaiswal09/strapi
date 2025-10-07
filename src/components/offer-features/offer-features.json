@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_offer_features_offer_features",
+  "info": {
+    "displayName": "Price",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "currency": {
+      "type": "string",
+      "required": false
+    },
+    "price": {
+      "type": "integer"
+    },
+    "per": {
+      "type": "string",
+      "required": true,
+      "maxLength": 30
+    }
+  }
+}

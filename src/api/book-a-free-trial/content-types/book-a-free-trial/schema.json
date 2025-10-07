@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "book_a_free_trials",
+  "info": {
+    "singularName": "book-a-free-trial",
+    "pluralName": "book-a-free-trials",
+    "displayName": "Book A Free Trial",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "first_name": {
+      "type": "string",
+      "required": true
+    },
+    "last_name": {
+      "type": "string",
+      "required": true
+    },
+    "phone": {
+      "type": "biginteger",
+      "required": true
+    },
+    "email": {
+      "type": "email",
+      "required": true
+    },
+    "message": {
+      "type": "text",
+      "required": true,
+      "maxLength": 500
+    },
+    "artforms": {
+      "type": "string",
+      "required": true
+    },
+    "country": {
+      "type": "string",
+      "required": true,
+      "maxLength": 40
+    }
+  }
+}

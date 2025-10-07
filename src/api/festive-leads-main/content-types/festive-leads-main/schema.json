@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "festive_leads_mains",
+  "info": {
+    "singularName": "festive-leads-main",
+    "pluralName": "festive-leads-mains",
+    "displayName": "Festive leads main",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Email": {
+      "type": "email"
+    },
+    "Phone": {
+      "type": "string"
+    },
+    "Country": {
+      "type": "string"
+    },
+    "PackageName": {
+      "type": "string"
+    }
+  }
+}
